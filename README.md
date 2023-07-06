@@ -10,13 +10,13 @@ The Database is implemented using Spring data JPA and Docker, therefore in order
 Download the application as a .zip or pull the repo to your local machine.
 Assuming you have docker set up in your machine, start docker's engine.
 Run the following command in your terminal
-  - docker run --detach --env MYSQL_ROOT_PASSWORD=<root-password> --env MYSQL_USER=<user-name> --env MYSQL_PASSWORD=<user-password> --env MYSQL_DATABASE=<user-database-name> --name mysql --publish 3307:3307 mysql:8-oracle
+  - docker run --detach --env MYSQL_ROOT_PASSWORD='root-password' --env MYSQL_USER='user-name' --env MYSQL_PASSWORD='user-password' --env MYSQL_DATABASE='user-database-name' --name mysql --publish 3307:3307 mysql:8-oracle
   - To create a new user in your MySql server, open 'MySQL Command Line Client' and run:
-    - CREATE USER <username>@localhost identified by '<password>';
-    - GRANT ALL PRIVILEGES ON * . * TO <username>@localhost;
+    - CREATE USER 'username'@localhost identified by 'password';
+    - GRANT ALL PRIVILEGES ON * . * TO 'username'@localhost;
   - Open terminal with the path='C:/Program Files//MySQL/MySQL Server 8.0/bin and run:
-    - mysql -u <username> -p <password>
-    - CREATE database <user-database-name>
+    - mysql -u 'username' -p 'password'
+    - CREATE database 'user-database-name'
 Then run the application.
                                                                                           
        
