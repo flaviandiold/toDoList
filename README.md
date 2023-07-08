@@ -6,7 +6,7 @@ The Frontend (View) of the web application is implemented using JSPs and CSS.
 The Backend is entirely implemented using various Java framework and technology, Spring Boot and Spring MVC.
 The Database is implemented using Spring data JPA and Docker, therefore in order to work with the database you have to create a docker container.
 
-#Instructions
+# Instructions
 Download the application as a .zip or pull the repo to your local machine.
 Assuming you have docker set up in your machine, start docker's engine.
 Run the following command in your terminal
